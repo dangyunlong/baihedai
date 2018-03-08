@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>运营数据</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet/less" tyle="text/css" href="src/css/data.less">
+	<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<!--app不需要头部 下方js请注意修改-->
+	<div class="public-head" style="position: relative;">
+		<a href="index.html" id="return-arrow"><img src="src/img/public/return.png" /></a> 运营数据
+	</div>
+    <div class="swiper-container swiper-container-v" id="swiper-container">    
+        <div class="swiper-wrapper">  
+        	<!--page1-->
+            <div class="swiper-slide">
+            	<div class="page1box">
+	            	<div class="page1-role1">5</div>
+	            	<div class="page1-role2">159</div>
+	            	<div class="page1-role3">10</div>
+	            	<div class="page1-role4">￥1027,021,446</div>
+	            	<div class="page1-role5">￥627,021,446</div>
+	            	<div class="page1-role6">21,446</div>
+	            	<img src="src/img/data/page1/role1.png" width="100%"/>
+            	</div>
+            	<div class="uparrow" style="top: 90%;"></div>
+            </div>    
+            <!--page2-->
+            <div class="swiper-slide">
+                <div class="swiper-container swiper-container-h">    
+                    <div class="swiper-wrapper">    
+                    	<div class="swiper-slide">
+                    		<div class="page2box">
+                    			<div class="page3-role1">投资人数据统计</div>
+				            	<div class="page2-role5">
+				            		<div class="page2-role1">21,446</div>
+					            	<div class="page2-role2">￥10,0000</div>
+					            	<div class="page2-role3">￥627,021,446</div>
+					            	<img src="src/img/data/page2/role1.png" width="100%"/>
+				            	</div>
+			            	</div>
+                    		<div class="uparrow2"></div>
+                    	</div>    
+                        <div class="swiper-slide">
+                        	<div class="page3box">
+                        		<div class="page3-role1">投资人数统计</div>
+                        		<div class="page3-role2">平台月度成交量</div>
+                        		<div class="page3-role3">（单位：万元）</div>
+                        		<div id="echarts1" style="width: 100%;height:90%;" class="echartsbox1"></div>
+			            	</div>
+                        </div>    
+                        <div class="swiper-slide" style="padding-top: 25%;">
+                        	<div class="page4box">
+                        		<div class="page4-role1">投资人数据统计</div>
+                        		<div class="page4-role2">投资风云榜</div>
+                        		<div class="page4-role3">
+                        		<table cellpadding="0" cellspacing="0">
+                        			<thead>
+	                        			<tr>
+	                        				<td>排名</td>
+	                        				<td>昵称</td>
+	                        				<td>累计投资金额</td>
+	                        				<td>累计获取收益</td>
+	                        			</tr>
+                        			</thead>
+                        			<tbody>
+	                        			<tr>
+	                        				<td>1</td>
+	                        				<td>W***le</td>
+	                        				<td>￥1027,021,446</td>
+	                        				<td>￥1027,021,446</td>
+	                        			</tr>
+	                        			<tr>
+	                        				<td>2</td>
+	                        				<td>W***le</td>
+	                        				<td>￥1027,021,446</td>
+	                        				<td>￥1027,021,446</td>
+	                        			</tr>
+	                        			<tr>
+	                        				<td>3</td>
+	                        				<td>W***le</td>
+	                        				<td>￥1027,021,446</td>
+	                        				<td>￥1027,021,446</td>
+	                        			</tr>
+	                        			<tr>
+	                        				<td>4</td>
+	                        				<td>W***le</td>
+	                        				<td>￥1027,021,446</td>
+	                        				<td>￥1027,021,446</td>
+	                        			</tr>
+	                        			<tr>
+	                        				<td>5</td>
+	                        				<td>W***le</td>
+	                        				<td>￥1027,021,446</td>
+	                        				<td>￥1027,021,446</td>
+	                        			</tr>
+	                        			<tr>
+	                        				<td>7</td>
+	                        				<td>W***le</td>
+	                        				<td>￥1027,021,446</td>
+	                        				<td>￥1027,021,446</td>
+	                        			</tr>
+	                        			<tr>
+	                        				<td>8</td>
+	                        				<td>W***le</td>
+	                        				<td>￥1027,021,446</td>
+	                        				<td>￥1027,021,446</td>
+	                        			</tr>
+	                        			<tr>
+	                        				<td>9</td>
+	                        				<td>W***le</td>
+	                        				<td>￥1027,021,446</td>
+	                        				<td>￥1027,021,446</td>
+	                        			</tr>
+	                        			<tr>
+	                        				<td>10</td>
+	                        				<td>W***le</td>
+	                        				<td>￥1027,021,446</td>
+	                        				<td>￥1027,021,446</td>
+	                        			</tr>
+                        			</tbody>
+                        		</table>
+                    		</div>
+			            	</div>
+                        </div>    
+                        <div class="swiper-slide">
+                        	<div class="page5box">
+                        		<div class="page5-role1">投资人数据统计</div>
+                        		<div class="page5-role2">投资用户分析</div>
+                        		<div class="page5-role3">年龄分布</div>
+                        		<div class="page5-role4">性别分布</div>
+                        		<div id="echarts2" style="width: 100%;height:35%;" class="echartsbox2"></div>
+                        		<div id="echarts3" style="width: 100%;height:35%;" class="echartsbox3"></div>
+                        	</div>
+                        </div>    
+                    </div>    
+                    <div class="swiper-pagination swiper-pagination-h"></div>    
+                </div>    
+            </div>
+            <!--page3-->
+            <div class="swiper-slide">
+            	<div class="swiper-container swiper-container-y">    
+                    <div class="swiper-wrapper">    
+                    	<div class="swiper-slide">
+                    		<div class="page6box">
+                    			<div class="page3-role1">借款人数据统计</div>
+                    			<div class="page2-role5">
+					            	<div class="page6-role1">21,446</div>
+					            	<div class="page6-role2">￥10,0000</div>
+					            	<div class="page6-role3">￥627,021,446</div>
+					            	<img src="src/img/data/page4/role1.png" width="100%"/>
+					            </div>
+			            	</div>
+                    	</div>    
+                        <div class="swiper-slide">
+                        	<div class="page7box">
+                        		<div class="page7-role1">借款人数据统计</div>
+                        		<div class="page7-role2">平台借款数据</div>
+                        		<div class="page7-role3">（单位：万元）</div>
+                        		<div id="echarts4" style="width: 100%;height:90%;" class="echartsbox4"></div>
+			            	</div>
+                        </div>    
+                        <div class="swiper-slide">
+                        	<div class="page8box">
+                        		<div class="page8-role1">借款人数据统计</div>
+                        		<div class="page8-role2">借款用户分析</div>
+                        		<div class="page8-role3">年龄分布</div>
+                        		<div class="page8-role4">性别分布</div>
+                        		<div id="echarts5" style="width: 100%;height:35%;" class="echartsbox5"></div>
+                        		<div id="echarts6" style="width: 100%;height:35%;" class="echartsbox6"></div>
+                        	</div>
+                        </div>    
+                    </div>    
+                    <div class="swiper-pagination swiper-pagination-y"></div>    
+                </div>  
+            </div>     
+        </div>    
+    </div>
+    <script language="javascript" type="text/javascript">
+	    require(['src/js/common.js'], function (common){
+	        require(['src/js/data.js']);
+	    });
+	</script>
+</body>
+</html>

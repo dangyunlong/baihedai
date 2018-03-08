@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的消息</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_message.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="src/img/public/return.png" /></a> 我的消息
+		</div>
+		<p class="headbox"></p>
+		<div class="message-big-box">
+			<!--for 循环此块内容-->
+			<div class="message-box">
+				<div class="message-title-box">
+					<a href="javascript:void(0)">
+						<div class="message-title">
+							<div class="floatleft">投资成功</div>
+							<div class="floatright">
+								<img src="src/img/user/message/pointDown.png" alt="" />
+							</div>
+						</div>
+						<div class="message-time">
+							2017-03-06 11:49:27
+						</div>
+					</a>
+				</div>
+				<div class="message-main">
+					尊敬的用户，您有一笔金额2000.00元充值成功，请注意查收<br />
+					尊敬的用户，您有一笔金额2000.00元充值成功，请注意查收<br />
+				</div>
+			</div>
+			<!--for 循环此块内容end-->
+			<div class="message-box">
+				<div class="message-title-box">
+					<a href="javascript:void(0)">
+						<div class="message-title">
+							<div class="floatleft">投资成功</div>
+							<div class="floatright">
+								<img src="src/img/user/message/pointDown.png" alt="" />
+							</div>
+						</div>
+						<div class="message-time">
+							2017-03-06 11:49:27
+						</div>
+					</a>
+				</div>
+				<div class="message-main">
+					尊敬的用户，您有一笔金额2000.00元充值成功，请注意查收<br />
+					尊敬的用户，您有一笔金额2000.00元充值成功，请注意查收<br />
+				</div>
+			</div>
+		</div>
+		<!--加载更多-->
+		<div class="more">
+			向上滑动加载更多
+		</div>
+		<!--加载更多 end-->
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_message.js']);
+		    });
+		</script>
+	</body>
+</html>

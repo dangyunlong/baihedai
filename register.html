@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" href="css/head.css" />
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+	<body id="body">
+		<div class="public-head">
+			<a href="notice-list.html"><img src="img/public/return.png" /></a> 登录
+		</div>
+		<p class="headbox"></p>
+		<div class="inputbox">
+			<div>
+				<div class="userbox">
+					<img src="img/register/icon-phone.png" width="16" height="16" class="uesricon"/>
+					<input type="text" id="phone" name="phone" placeholder="手机号码" maxlength="11"/>
+					<img src="img/register/delete.png" class="uesrdelete" width="13" height="13"/>
+					<span class="prompt" id="phoneTips">asdasdas</span>
+				</div>
+				<div class="picturebox">
+					<img src="img/register/icon-bubble.png" width="16" height="16" class="uesricon"/>
+					<input type="text" id="verify" name="verify" placeholder="请输入图形验证码" maxlength="4" onblur="click_verify()"/>
+					<span class="picturebox-code"><img src="img/register/code.png" id="verifyImg"></span>
+					<span class="picturebox-refresh"><a onClick="click_change()"><img src="img/register/refresh.png"/></a></span>
+					<span class="prompt" id="verifyTips"></span>
+				</div>
+				<div class="messagebox">
+					<img src="img/register/icon-bubble2.png" width="16" height="16" class="uesricon"/>
+					<input id="phonecode" name="phonecode" maxlength="5" placeholder="请输入短信验证码" onblur="chekphonecode()"/>
+	                <input type="button" id="hqyzm" name="validCode" class="get-message" value="获取验证码">
+					<span class="prompt" id="phonecodeTips"></span>
+				</div>
+				<div class="passbox">
+					<img src="img/register/icon-password.png" width="16" height="16" class="uesricon"/>
+				    <input type="password" id="password" name="password" placeholder="设置6-20位密码,含字母和数字" maxlength="20" onblur="chekPassWord()"/>
+					<img src="img/register/delete.png" class="uesrdelete" width="13" height="13"/>
+					<span class="prompt" id="passwordTips"></span>
+					<a href="#" class="invitation" id="recoArrow">
+						<img src="img/register/arrow.png" width="12" height="12" id="arrowid"/>
+						填写注册邀请码
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="inputbox2" id="inputbox2">
+			<div class="invitationbox">
+				<img src="img/register/icon-invitation.png" width="16" height="16" class="uesricon"/>
+				<input type="text" id="yaoqingma" placeholder="邀请码" value=""/>
+				<img src="img/register/delete.png" class="uesrdelete" width="13" height="13"/>
+				<!--<span class="prompt2">邀请码错误!</span>-->
+			</div>	
+		</div>
+		<div class="agree-box">
+			<a href="#"><img src="img/register/agree-enter.png" width="16" height="16" id="agree" /></a>我已阅读并同意<a href="#" class="mgl-5">《百合贷投资协议》</a>
+		</div>
+		<div class="btnbox">
+			<a href="#" class="login-btn1">立即注册</a>
+			<div class="btnbox-login">
+				已有账号？ <a href="#">立即登录</a>
+			</div>
+			<!--<div class="sslbox">
+				<div class="ssl">
+					<span><img src="img/user/reduce/shield.png"></span> 
+					<span>您的信息已使用SSl加密技术，数据传输安全。</span>
+				</div>
+			</div>-->
+		</div>
+		<script src="js/rem/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//下划线
+			$("input").on("tap",function(){
+				$(".userbox,.passbox,.invitationbox,.picturebox,.messagebox").removeClass("choice");
+				$(this).siblings(".uesrdelete").css("display","none");
+				$(this).on("keydown",function(){
+					$(this).siblings(".uesrdelete").css("display","block");
+				})
+				$(this).on("blur",function(){
+					if($(this).val()==""){
+						$(this).siblings(".uesrdelete").css("display","none");
+					}
+				})
+				if($(this).val()!==""){
+					$(this).siblings(".uesrdelete").css("display","block");
+				}
+				$(this).parent("div").addClass("choice");
+			})
+			$(".uesrdelete").on("tap",function(){
+				$(this).siblings("input").val("");
+				$(this).hide();
+			})
+			//移除input选中
+			$(document).on("tap",function(ev){
+				if(ev.target.id=="body"&&$("#phone").val()==""){
+					$("#phone").siblings(".uesrdelete").css("display","none");
+					$("#phone").parent("div").removeClass("choice");
+				}
+				if(ev.target.id=="body"&&$("#verify").val()==""){
+					$("#verify").siblings(".uesrdelete").css("display","none");
+					$("#verify").parent("div").removeClass("choice");
+				}
+				if(ev.target.id=="body"&&$("#phonecode").val()==""){
+					$("#phonecode").siblings(".uesrdelete").css("display","none");
+					$("#phonecode").parent("div").removeClass("choice");
+				}
+				if(ev.target.id=="body"&&$("#password").val()==""){
+					$("#password").siblings(".uesrdelete").css("display","none");
+					$("#password").parent("div").removeClass("choice");
+				}
+				if(ev.target.id=="body"&&$("#yaoqingma").val()==""){
+					$("#yaoqingma").siblings(".uesrdelete").css("display","none");
+					$("#yaoqingma").parent("div").removeClass("choice");
+				}
+			})
+			/*填写邀请码*/
+			$("#recoArrow").on("touchstart",function(){
+				if($("#inputbox2").css("display")=="none"){
+					$("#inputbox2").show();
+					$("#arrowid").attr("src","img/register/arrow-2.png")
+				}else{
+					$("#inputbox2").hide();
+					$("#arrowid").attr("src","img/register/arrow.png")
+				}
+			})
+			/*同意协议*/
+			$("#agree").on("touchstart",function(){
+				var img=$(this).attr("src");
+				if(img=="img/register/agree-enter.png"){
+					$(this).attr("src","img/register/agree.png");
+					return false;
+				}else{
+					$(this).attr("src","img/register/agree-enter.png");
+					return false;
+				}
+			})
+		</script>
+	</body>
+</html>

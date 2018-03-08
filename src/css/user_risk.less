@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import "public.less";
+
+.ft16 {
+    font-size: 14px;
+}
+.risk_box {
+    font-size:12px; 
+    position: relative;
+}
+.risk_box input[type=radio]{
+    display: inline-block; 
+    vertical-align: middle; 
+    vertical-align: top; 
+    margin-top: 8px; 
+    margin-right: 10px;
+}
+.risk_box p {
+    line-height: 30px;
+}
+.risk_box li {
+    display: block; 
+    border-bottom: 1px dashed #efefef;
+    padding-bottom:10px; 
+    padding: 10px;
+}
+.risk_box span {
+    display: inline-block;
+    vertical-align: middle; 
+    width: 90%;
+}
+.risk_box input[type=button]{
+    background: #ff5722;
+    border: 0;
+    font-size: 16px;
+    color: #ffffff;
+    width: 80%; 
+    height: 45px; 
+    line-height: 45px; 
+    margin: 0 auto; 
+    display: block; 
+    margin-top: 25px;
+}
+/*单选*/
+input[type=radio] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+    background: #fff;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    background: none;
+    background: url(../img/user/risk/f.png) no-repeat;
+    background-size: 100% 100% ;
+}
+input[type=radio]:checked::after {
+    content: '';
+    display: block;
+    position: relative;
+     width: 17px;
+    height:17px;
+     background: #666;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    background: url(../img/user/risk/t.png) no-repeat;
+    background-size: 100% 100%;
+}
+.floatbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 999;
+    background: rgba(0,0,0,0.3); 
+    display: none;
+}
+.floatwindow {
+    width:80%; 
+    height:170px;
+    text-align: center;
+    font-size: 17px;
+    position: fixed;
+    margin: 0 auto; 
+    top: 30%;
+    bottom:0;
+    left:0;
+    right:0;
+    background: #fff;
+    border-radius: 5px;
+}
+.floatwindow button {
+    width: 100px; 
+    height: 40px; 
+    line-height: 40px; 
+    background: none; 
+    border: 0;
+}
+.floatwindow .f-tit {
+    line-height: 60px;
+    color: #4c4c4c;
+}
+.floatwindow .f-r {
+    border: 1px solid #ff5722; 
+    color: #ff5722; 
+    margin-right: 10px;
+}
+.floatwindow .f-t {
+    background: #ff5722; 
+    color: #fff;
+    border: 1px solid #ff5722;
+}
+.floatwindow .f-txt {
+    font-size: 20px; 
+    color: #ff5722;
+    padding-bottom: 25px;
+}

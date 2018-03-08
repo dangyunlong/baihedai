@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人信息</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_center.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="src/img/public/return.png" /></a>个人信息
+		</div>
+		<p class="headbox"></p>
+		<div class="user-ul">
+			<ul>
+				<li>
+					<a href="javascript:void(0)">
+						<span>头像</span>
+						<span class="user-ul-left">
+							<img src="src/img/user/center/personal_head.png" alt="" />
+						</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/center/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<span>用户名</span>
+						<span class="user-ul-left">
+							ba335335
+						</span>
+						<span class="user-ul-right">
+							<span></span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="user-ul">
+			<ul>
+				<li>
+					<a href="#">
+						<span>存管账号</span>
+						<!--<span class="user-ul-left2">
+							<img src="src/img/user/center/anquan.png" alt="" width="15" height="15"/>
+							<span>bnd_bhdu4blaRSMvx</span>
+						</span>-->
+						<span class="user-ul-left2">
+							<img src="src/img/user/center/anquan1.png" alt="" width="15" height="15"/>
+							<span>bnd_bhdu4blaRSMvx</span>
+						</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/center/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="leave()">
+						<span>手机号</span>
+						<span class="user-ul-left">
+							139****1234
+						</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/center/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<span>身份证号</span>
+						<span class="user-ul-left">
+							110***********1234(未认证)
+						</span>
+						<span class="user-ul-right">
+							<p></p>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<span>银行卡号</span>
+						<span class="user-ul-left">
+							建设银行(尾号1234)
+						</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/center/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" id="center-code">
+						<span>我的二维码</span>
+						<span class="user-ul-left">
+						</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/center/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="user_risk.html" id="center-code">
+						<span>风险评估</span>
+						<span class="user-ul-left">
+							保守型
+						</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/center/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="heigthbox"></div>
+		<!--二维码-->
+		<div class="fullwindow" id="fullwindow">
+			<div class="fullbox">
+				<div class="fullbox-title">我的专属二维码</div>
+				<div class="fullbox-body">
+					<img src="src/img/user/center/code.png" alt="" width="140" height="140"/>
+				</div>
+				<div class="fullbox-bottom">邀请好友扫描二维码注册百合贷</div>
+			</div>
+		</div>
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_center.js']);
+		    });
+		</script>
+	</body>
+</html>

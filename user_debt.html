@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>投资记录</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/user_debt.css"/>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="img/public/return.png" /></a> 债权转让
+		</div>
+		<p class="headbox"></p>
+		<span class="project-tab-view-window">
+			<ul class="project-tab-title" id="pagetab">
+				<li id="target1" class="project-tab-border">
+					<a href="#">转让中的债权<span class="project-tab-border"></span></a>
+				</li>
+				<li id="target2">
+					<a href="#">已转让的债权<span></span></a>
+				</li>
+				<li id="target3">
+					<a href="#">已购买的债权<span></span></a>
+				</li>
+			</ul>
+		</span>
+		<div id="pagebox">
+			<!--转让中-->
+			<div id="target-page1">
+				<div class="user-record-box">
+					<div class="record-user-box">
+						<div class="record-user-title">个人经营抵押贷Y1827363</div>
+						<div class="record-user-mum">1,000.00</div>
+						<div class="record-user-mumtxt">转让金额(元)</div>
+					</div>
+					<div class="record-user-moneybox">
+						<div class="record-user-money">8.21%</div>
+						<div class="record-user-moneytxt">折让率</div>
+					</div>
+					<div class="record-user-timebox">
+						<div class="record-user-time">2017年03月06日到期</div>
+						<div class="record-user-state">
+							<img src="img/user/debt/credit_ing.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--已购买-->
+			<div id="target-page2" style="display: none;">
+				<div class="user-record-box">
+					<div class="record-user-box">
+						<div class="record-user-title2">个人经营抵押贷Y1827363</div>
+						<div class="record-user-mum2">1,000.00</div>
+						<div class="record-user-mumtxt">投资金额(元)</div>
+					</div>
+					<div class="record-user-moneybox">
+						<div class="record-user-money2">8.10%</div>
+						<div class="record-user-moneytxt">折让率</div>
+					</div>
+					<div class="record-user-timebox">
+						<div class="record-user-time">2017年03月06日到期</div>
+						<div class="record-user-state">
+							<img src="img/user/debt/credit_finish.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--已转让-->
+			<div id="target-page3" style="display: none;">
+				<div class="user-record-box">
+					<div class="record-user-box">
+						<div class="record-user-title">个人经营抵押贷Y1827363</div>
+						<div class="record-user-mum">1,000.00</div>
+						<div class="record-user-mumtxt">投资金额(元)</div>
+					</div>
+					<div class="record-user-moneybox">
+						<div class="record-user-money">8.12%</div>
+						<div class="record-user-moneytxt">折让率</div>
+					</div>
+					<div class="record-user-timebox">
+						<div class="record-user-time">2017年03月06日到期</div>
+						<div class="record-user-state">
+							<img src="img/user/debt/touzi_shouyi.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--加载更多-->
+		<div class="more">
+			向上滑动加载更多
+		</div>
+		<!--zepto-->
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<!--rem-->
+		<script src="js/rem/app.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/*选项卡*/
+			function tab(event){
+				str=$(event.data.name).attr("id");
+				num=str.substr(str.length-1,1);
+				$("#pagetab li").removeClass("project-tab-border");
+				$("#pagetab li span").removeClass("project-tab-border");
+				$(event.data.name).addClass("project-tab-border");
+				$(event.data.name).find("span").addClass("project-tab-border");
+				$("#pagebox>div").css("display","none");
+				$("#target-page"+num).css("display","block");
+			}
+			$("#target1").on("tap",{name:"#target1"},tab);
+			$("#target2").on("tap",{name:"#target2"},tab);
+			$("#target3").on("tap",{name:"#target3"},tab);
+			$(function(){
+				$(window).scroll(function(){
+					var docHeight=$(document).height();
+					var windHeigth=$(window).height();
+					var scollPx=docHeight-windHeigth;
+					if($(window).scrollTop()==scollPx){
+						alert(123)
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>红包/加息券</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_coupon.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="src/img/public/return.png" /></a>红包/加息券
+		</div>
+		<p class="headbox"></p>
+		<span class="project-tab-view-window">
+			<ul class="project-tab-title">
+				<li class="project-tab-border">
+					<a href="user_coupon_1.html">未使用<span class="project-tab-border"></span></a>
+				</li>
+				<li>
+					<a href="user_coupon_2.html">已使用<span></span></a>
+				</li>
+				<li>
+					<a href="user_coupon_3.html">已过期<span></span></a>
+				</li>
+			</ul>
+		</span>
+		<div>
+			<div>
+				<!--暂无-->
+				<!--<div class="no-coupons">
+					<img src="src/img/user/coupon/icon_wuhong.png" alt="" />
+					暂无红包/加息券
+				</div>-->
+				<div class="coupon-box-layer">
+					<div class="coupon-box hb">
+						<div class="coupon-box-overflow">
+							<div class="floatleft coupon-money-box">
+								<p><span>￥</span>100.00</p>
+							</div>
+							<div class="floatleft coupon-money-box-bottom">
+								<div class="coupon-money-title">
+									<p>理财红包</p>
+								</div>
+								<div class="coupon-money-text">
+									<p>
+										单笔投资金额10000元及以上<br />
+										投资期限6个月及以上使用
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="coupon-box-overflow">
+							<div class="coupon-box-time-left">有效期：2017.02.10--2017.03.10</div>
+							<div class="coupon-box-time-right">还有10天过期</div>
+						</div>
+					</div>
+				</div>
+				<div class="coupon-box-layer">
+					<div class="coupon-box jx">
+						<div class="coupon-box-overflow">
+							<div class="floatleft coupon-money-box">
+								<p>1.5<span>%</span></p>
+							</div>
+							<div class="floatleft coupon-money-box-bottom">
+								<div class="coupon-money-title">
+									<p>理财加息券</p>
+								</div>
+								<div class="coupon-money-text">
+									<p>
+										单笔投资金额10000元及以上<br />
+										投资期限6个月及以上使用
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="coupon-box-overflow">
+							<div class="coupon-box-time-left">有效期：2017.02.10--2017.03.10</div>
+							<div class="coupon-box-time-right">还有10天过期</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!--加载更多-->
+		<div class="more">
+			向上滑动加载更多
+		</div>
+		<!--加载更多 end-->
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_detailed.js']);
+		    });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>用户中心</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_view.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="src/img/public/return.png" /></a>账户总览
+		</div>
+		<p class="headbox"></p>
+		<div class="user-details">
+			<div class="user-money-box-top">
+				<div class="user-money-number">563,700.06</div>
+				<div class="user-money-text">账户总资产(元)</div>
+			</div>
+		</div>
+		<div class="user-ul">
+			<ul>
+				<li>
+					<a href="javascript:void(0)">
+						<span>账户余额</span>
+						<span class="user-ul-left">
+							91,877.99元
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<span>冻结金额</span>
+						<span class="user-ul-left">
+							10,190元
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<span>待收本金</span>
+						<span class="user-ul-left">
+							2,000元
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<span>代收收益</span>
+						<span class="user-ul-left">
+							16.66元
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<span>已收收益</span>
+						<span class="user-ul-left">
+							2,499.99元
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_view.js']);
+		    });
+		</script>
+	</body>
+</html>

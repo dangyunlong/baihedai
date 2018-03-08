@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资金明细</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/user_detailed.css"/>
+	</head>
+	<body>
+		<!--head-->
+		<div class="public-head">
+			<a href="user.html"><img src="img/public/return.png" /></a> 资金明细
+		</div>
+		<p class="headbox"></p>
+		<!--head end-->
+		<div id="pagebox">
+			<!--选项-->
+			<span class="project-tab-view-window">
+				<ul class="project-tab-title" id="pagetab">
+					<li id="target1" class="project-tab-border">
+						<a href="#">全部<span class="project-tab-border"></span></a>
+					</li>
+					<li id="target2">
+						<a href="#">充值<span></span></a>
+					</li>
+					<li id="target3">
+						<a href="#">提现<span></span></a>
+					</li>
+					<li id="target4">
+						<a href="#">投资<span></span></a>
+					</li>
+					<li id="target5">
+						<a href="#">回款<span></span></a>
+					</li>
+				</ul>
+			</span>
+			<!--选项end-->
+			<!--全部-->
+			<div class="user-detailed-box" id="target-page1">
+				<ul>
+					<li>
+						<table>
+							<tr>
+								<td rowspan="2" valign="top" width="42">
+									<img src="img/user/detailed/money_type1.png"/>
+								</td>
+								<td valign="top" class="user-det-title">
+									充值
+								</td>
+								<td rowspan="2" class="user-det-money up" valign="top">
+									+20000
+								</td>
+							</tr>
+							<tr>
+								<td valign="bottom" class="user-det-time">
+									2017-03-06 11:49:27
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<td rowspan="2" valign="top" width="42">
+									<img src="img/user/detailed/money_type2.png"/>
+								</td>
+								<td valign="top" class="user-det-title">
+									提现
+								</td>
+								<td rowspan="2" class="user-det-money" valign="top">
+									-56200
+								</td>
+							</tr>
+							<tr>
+								<td valign="bottom" class="user-det-time">
+									2017-03-06 11:49:27
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<td rowspan="2" valign="top" width="42">
+									<img src="img/user/detailed/money_type3.png"/>
+								</td>
+								<td valign="top" class="user-det-title">
+									投资
+								</td>
+								<td rowspan="2" class="user-det-money" valign="top">
+									-110000
+								</td>
+							</tr>
+							<tr>
+								<td valign="bottom" class="user-det-time">
+									2017-03-06 11:49:27
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+							<tr>
+								<td rowspan="2" valign="top" width="42">
+									<img src="img/user/detailed/money_type1.png"/>
+								</td>
+								<td valign="top" class="user-det-title">
+									回款
+								</td>
+								<td rowspan="2" class="user-det-money up" valign="top">
+									+122000
+								</td>
+							</tr>
+							<tr>
+								<td valign="bottom" class="user-det-time">
+									2017-03-06 11:49:27
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+			
+			<!--加载更多-->
+			<div class="more">
+				向上滑动加载更多
+			</div>
+			<!--加载更多 end-->
+			
+			<!--全部 end-->
+			<!--充值-->
+			<div class="user-detailed-box" id="target-page2" style="display: none;">
+				<ul>
+					<li>
+						<table>
+							<tr>
+								<td rowspan="2" valign="top" width="42">
+									<img src="img/user/detailed/money_type1.png"/>
+								</td>
+								<td valign="top" class="user-det-title">
+									充值
+								</td>
+								<td rowspan="2" class="user-det-money up" valign="top">
+									+20000
+								</td>
+							</tr>
+							<tr>
+								<td valign="bottom" class="user-det-time">
+									2017-03-06 11:49:27
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+			<!--充值 end-->
+			<!--提现-->
+			<div class="user-detailed-box" id="target-page3" style="display: none;">
+				<ul>
+					<li>
+						<table>
+							<tr>
+								<td rowspan="2" valign="top" width="42">
+									<img src="img/user/detailed/money_type2.png"/>
+								</td>
+								<td valign="top" class="user-det-title">
+									提现
+								</td>
+								<td rowspan="2" class="user-det-money" valign="top">
+									-3000
+								</td>
+							</tr>
+							<tr>
+								<td valign="bottom" class="user-det-time">
+									2017-03-06 11:49:27
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+			<!--提现 end-->
+			<!--投资-->
+			<div class="user-detailed-box" id="target-page4" style="display: none;">
+				<ul>
+					<li>
+						<table>
+							<tr>
+								<td rowspan="2" valign="top" width="42">
+									<img src="img/user/detailed/money_type3.png"/>
+								</td>
+								<td valign="top" class="user-det-title">
+									投资
+								</td>
+								<td rowspan="2" class="user-det-money" valign="top">
+									-3000
+								</td>
+							</tr>
+							<tr>
+								<td valign="bottom" class="user-det-time">
+									2017-03-06 11:49:27
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+			<!--投资 end-->
+			<!--回款-->
+			<div class="user-detailed-box" id="target-page5" style="display: none;">
+				<ul>
+					<li>
+						<table>
+							<tr>
+								<td rowspan="2" valign="top" width="42">
+									<img src="img/user/detailed/money_type1.png"/>
+								</td>
+								<td valign="top" class="user-det-title">
+									投资
+								</td>
+								<td rowspan="2" class="user-det-money up" valign="top">
+									+3000
+								</td>
+							</tr>
+							<tr>
+								<td valign="bottom" class="user-det-time">
+									2017-03-06 11:49:27
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+			<!--回款 end-->
+		</div>
+		<!--zepto-->
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<!--rem-->
+		<script src="js/rem/app.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/*选项卡*/
+			function tab(event){
+				str=$(event.data.name).attr("id");
+				num=str.substr(str.length-1,1);
+				$("#pagetab li").removeClass("project-tab-border");
+				$("#pagetab li span").removeClass("project-tab-border");
+				$(event.data.name).addClass("project-tab-border");
+				$(event.data.name).find("span").addClass("project-tab-border");
+				$("#pagebox>div").css("display","none");
+				$("#target-page"+num).css("display","block");
+			}
+			$("#target1").on("tap",{name:"#target1"},tab)
+			$("#target2").on("tap",{name:"#target2"},tab)
+			$("#target3").on("tap",{name:"#target3"},tab)
+			$("#target4").on("tap",{name:"#target4"},tab)
+			$("#target5").on("tap",{name:"#target5"},tab)
+			$(function(){
+				$(window).scroll(function(){
+					var docHeight=$(document).height();
+					var windHeigth=$(window).height();
+					var scollPx=docHeight-windHeigth;
+					if($(window).scrollTop()==scollPx){
+						alert(123)
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

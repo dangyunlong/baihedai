@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>用户中心</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_add.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="src/img/public/return.png" /></a>账户充值
+			<span class="user-how">
+				<a href="user_add_2.html">
+					<span>充值规则</span>
+				</a>
+			</span>
+		</div>
+		<p class="headbox"></p>
+		<div class="user-details">
+			<div class="user-money-box-top">
+				<div class="user-money-number">563,700.06</div>
+				<div class="user-money-text">账户余额(元)</div>
+			</div>
+		</div>
+		<div class="user-addbox">
+			<div class="user-addbox-top">
+				<div class="addbox-card-name">
+					<span><img src="src/img/user/add/personal_card.png" alt="" /></span>
+					<span>银行卡</span>
+				</div>
+				<div class="addbox-card-title" id="bank">
+					<!--已经绑卡用户-->
+					<!--<span id="bankname">中国广大银行储蓄卡(5420)</span>-->
+					<!--未绑卡用户-->
+					<span id="bankname">农业银行</span>
+					<span><img src="src/img/user/add/bank_point_right.png" id="bank-arrow"/></span>
+					<input type="text" value="" id="bankspan" name="bankid" style="display: none;"/>
+				</div>
+				<!--未绑卡用户-->
+				<div class="bank-box" id="bank-box">
+					<table>
+						<tr>
+							<td><img src="src/img/user/add/bank/ABC.png"/></td>
+							<td>农业银行<span data-value="name1"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/CCB.png"/></td>
+							<td>建设银行<span data-value="name2"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/BOC.png"/></td>
+							<td>中国银行<span data-value="name3"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/CEB.png"/></td>
+							<td>光大银行<span data-value="name9"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/CIB.png"/></td>
+							<td>兴业银行<span data-value="name9"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/CITIC.png"/></td>
+							<td>中信银行<span data-value="name9"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/PINGAN.png"/></td>
+							<td>平安银行<span data-value="name9"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/BOS.png"/></td>
+							<td>上海银行<span data-value="name9"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/CBHB.png"/></td>
+							<td>渤海银行<span data-value="name9"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/PSBC.png"/></td>
+							<td>邮储银行<span data-value="name9"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/SPDB.png"/></td>
+							<td>浦发银行<span data-value="name9"></span></td>
+						</tr>
+						<tr>
+							<td><img src="src/img/user/add/bank/ICBC.png"/></td>
+							<td>工商银行<span data-value="name9"></span></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="user-addbox-bottom">
+				<div class="addbox-card-number">
+					<span><img src="src/img/user/add/personal_charge.png" alt="" /></span>
+					<span>金额(¥)</span>
+				</div>
+				<div class="addbox-card-user">
+					<input type="tel" id="" placeholder="请输入充值金额"/>
+				</div>
+			</div>
+		</div>
+		<div class="addbox-card-btn">
+			<a href="#">充值</a>
+		</div>
+		<div class="sslbox" id="sslbox">
+			<div class="ssl">
+				<span><img src="src/img/user/add/shield.png"></span> 
+				<span>您的信息已使用SSl加密技术，数据传输安全。</span>
+			</div>
+		</div>
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_add.js']);
+		    });
+		</script>
+	</body>
+</html>

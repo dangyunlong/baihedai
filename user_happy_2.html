@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>合家欢计划</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_happy.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="src/img/public/return.png" /></a> 合家欢计划
+		</div>
+		<p class="headbox"></p>
+		<span class="project-tab-view-window">
+			<ul class="project-tab-title">
+				<li>
+					<a href="user_happy_1.html">加入期<span></span></a>
+				</li>
+				<li class="project-tab-border">
+					<a href="user_happy_2.html">锁定期<span class="project-tab-border"></span></a>
+				</li>
+				<li>
+					<a href="user_happy_3.html">已退出<span></span></a>
+				</li>
+			</ul>
+		</span>
+		<div>
+			<!--锁定期-->
+			<div id="target-page2">
+				<div class="user-record-box">
+					<a href="happy.html">
+						<div class="record-user-box">
+							<div class="record-user-title">合家欢-1个月计划</div>
+							<div class="record-user-mum">1,000.00</div>
+							<div class="record-user-mumtxt">加入金额(元)</div>
+						</div>
+						<div class="record-user-moneybox">
+							<div class="record-user-money">10.0%</div>
+							<div class="record-user-moneytxt">收益率</div>
+						</div>
+						<div class="record-user-timebox">
+							<div class="record-user-time">2017年03月06日退出</div>
+							<div class="record-user-state">
+								<img src="src/img/user/happy/touzi_shouyi.png"/>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>	
+		<!--加载更多-->
+		<div class="more">
+			向上滑动加载更多
+		</div>
+		<!--暂无数据-->
+		<!--<div class="project-trg-nodata">
+			<img src="src/img/user/detailed/nodata.png" width="67" height="86"/>
+			暂无记录
+		</div>-->
+		<!--暂无数据end-->
+		<!--zepto-->
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_detailed.js']);
+		    });
+		</script>
+	</body>
+</html>

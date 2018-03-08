@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+		<title>修改密码</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_modify.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user_config.html"><img src="src/img/public/return.png" /></a> 修改密码
+		</div>
+		<p class="headbox"></p>
+		<div id="page1">
+			<div class="inputbox">
+				<div class="passbox1">
+					<input type="text" id="original" placeholder="请输入原密码"/>
+					<img src="src/img/user/modify/delete.png" class="uesrdelete" />
+				</div>
+				<div class="passbox2">
+					<input type="text" id="newpassword" placeholder="请设置6-16位数字、字母组合的新密码" />
+					<img src="src/img/user/modify/delete.png" class="uesrdelete" />
+				</div>
+				<div class="passbox3">
+					<input type="text" id="again" placeholder="再次确认新密码"/>
+					<img src="src/img/user/modify/delete.png" class="uesrdelete" />
+				</div>
+			</div>
+			<div class="nextbtn">
+				<a href="#" class="login-btn1" id="nextbtn">下一步</a>
+			</div>
+			<div class="sslbox" id="sslbox">
+				<div class="ssl">
+					<span><img src="src/img/user/reduce/shield.png"></span> 
+					<span>您的信息已使用SSl加密技术，数据传输安全。</span>
+				</div>
+			</div>
+		</div>
+		<div id="page2" style="display: none;">
+			<div class="public-judge-box">
+				<img src="src/img/public/success.png" alt="" width="80" height="80"/>
+				<span class="public-judge-title">修改成功</span>
+				<div class="public-money-box">
+				</div>
+				<div class="public-judge-box-pd"><a href="user.html">立即返回</a></div>
+			</div>
+		</div>
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_modify.js']);
+		    });
+		</script>
+	</body>
+</html>

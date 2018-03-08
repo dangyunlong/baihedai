@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import "public.less";
+
+/*选项卡*/
+.project-tab-view-window {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+}
+ul.project-tab-title {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    li{
+        font-size: 0.4rem;
+        text-align: center;
+        position: relative;
+        color:#999;
+        white-space:nowrap;
+        a {
+            display: block;
+            float: left;
+            width: 33.3%;
+            color:#999;
+            padding-bottom: 0.35rem;
+            padding-top: 0.35rem;
+            position: relative;
+        }
+    }
+    li.project-tab-border a{
+        color:#ff5722;
+    }
+    li span {
+        background:none;
+        position: absolute;
+        bottom: -1px;
+        display: block;
+        width: 100%;
+        height: 3px;
+    }
+    li span.project-tab-border{
+        background:#fe6246;
+        font-size:14px;
+        color:#999;
+    }
+    
+}
+.project-tab-view-window::-webkit-scrollbar{
+    width:0;
+    height:0;
+}
+.project-more {
+    flex: 1;
+    font-size: 0.3rem;
+    text-align: center;
+    align-items: flex-end;
+}
+/**/
+body {
+    background: #f2f2f2;
+    font-family: "微软雅黑";
+}
+.coupon-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.coupon-box-layer {
+    width: 90%;
+    padding-top: 36%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hb {
+    background: url(../img/user/coupon/36.png) no-repeat;
+    background-size: 100% 100%;
+}
+.jx {
+    background: url(../img/user/coupon/38.png) no-repeat;
+    background-size: 100% 100%;
+}
+.sy-hb {
+    background: url(../img/user/coupon/37.png) no-repeat;
+    background-size: 100% 100%;
+}
+.sy-jx {
+    background: url(../img/user/coupon/39.png) no-repeat;
+    background-size: 100% 100%;
+}
+.coupon-money-box {
+    width: 30%;
+    height: 100%;
+    font-size: 0.58rem;
+    color:#FFFFFF;
+    text-align: center;
+    display: table;  
+}
+.coupon-money-box p {
+    display:table-cell;
+    vertical-align: middle;
+}
+.coupon-money-box  span {
+    font-size: 0.4rem;
+}
+.coupon-money-box-bottom {
+    width: 70%;
+    height: 100%;
+}
+.coupon-box .coupon-box-overflow:nth-child(1) {
+    height: 66%;
+}
+.coupon-box .coupon-box-overflow:nth-child(2) {
+    width: 100%;
+    height: 34%;
+    display: table;
+}
+.coupon-money-title {
+    font-size: 0.41rem;
+    width: 100%;
+    color: #4d4d4d;
+    display: table;
+    height: 40%;
+}
+.coupon-money-title p {
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: bottom;
+}
+.coupon-money-title2 {
+    font-size: 0.41rem;
+    width: 100%;
+    color: #4d4d4d;
+    display: table;
+    height: 40%;
+}
+.coupon-money-title2 p{
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: bottom;
+}
+.coupon-money-text {
+    font-size: 0.3rem;
+    color: #999999;
+    height: 60%;
+    display: table;
+}
+.coupon-money-text p {
+    padding-left: 20px;
+    padding-top: 10px;
+    display: table-cell;
+    vertical-align:top;
+}
+.coupon-box-overflow {
+    overflow: hidden;
+}
+.coupon-box-time-left {
+    font-size: 0.32rem;
+    height: 100%;
+    color: #5d90e3;
+    padding-left: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.coupon-box-time-right {
+    font-size: 0.32rem;
+    height: 100%;
+    color: #ff5151;
+    padding-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+.coupon-box-time-left2 {
+    font-size: 0.35rem;
+    height: 100%;
+    color: #999999;
+    padding-left: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.coupon-box-time-right2 {
+    font-size: 0.35rem;
+    height: 100%;
+    color: #999999;
+    padding-right: 10px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+}
+/*暂无红包*/
+.no-coupons {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #d9d9d9;
+}
+.no-coupons img {
+    display: block;
+    margin: 0 auto;;
+    width: 70px;
+    margin-bottom: 40px;
+}
+/*加载*/
+.more {
+    font-size: 0.35rem;
+    color: #b3b3b3;
+    text-align: center;
+    height: 35px;
+    padding-top: 15px;
+}
+/*选取加息券*/
+.disblock-a {
+    display: block;
+    overflow: hidden;
+}

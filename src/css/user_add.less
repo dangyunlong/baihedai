@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@import "public.less";
+
+body {
+    background: #f2f2f2;
+    font-family: "微软雅黑";
+}
+.user-details {
+    padding-top: 15px;
+    background:#ff5722;
+    color: #fff;
+}
+.user-details-top {
+    font-size: 0.5rem;
+    padding-bottom: 35px;
+    span {
+        display: table-cell;
+    }
+    span:nth-child(1){
+        display: table-cell;
+        padding-left: 20px;
+        width: 10%;
+    }
+    span:nth-child(2){
+        display: table-cell;
+        text-align: center;
+        width: 80%;
+    }
+    span:nth-child(3){
+        display: table-cell;
+        text-align: right;
+        width: 10%;
+        padding-right: 20px;
+    }
+    img {
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+}
+.user-details-pd {
+    display: table;
+    width: 100%;
+}
+.user-money-box-top {
+    padding-bottom: 25px;
+}
+.user-money-number {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+.user-money-text {
+    text-align: center;
+    font-size: 0.3rem;
+}
+.user-addbox {
+    background: #fff;
+    font-size: 0.35rem;
+}
+.user-addbox-top {
+    display: table;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #f6f6f6;
+    position: relative;
+}
+.addbox-card-name {
+    display: table-cell;
+    padding-left: 15px;
+    width: 30%;
+    img {
+        display: table-cell;
+        width: 0.6rem;
+        margin-right: 10px;
+    }
+    span{
+        display: table-cell;
+        vertical-align: middle;
+        color: #4C4C4C;
+    }
+}
+.addbox-card-title {
+    display: table-cell;
+    vertical-align: middle;
+    color: #5c91e1;
+    padding-right: 15px;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        img{
+            height: 0.3rem;
+        }
+    }
+    span:nth-child(2){
+        padding-top: 2px;
+        position: absolute;
+        right: 15px;
+    } 
+}
+.addbox-card-number {
+    display: table-cell;
+    padding-left: 15px;
+    width: 30%;
+    img {
+        width: 0.6rem;
+        margin-right: 10px;
+        margin-top: 1px;
+    }
+}
+.user-addbox-bottom {
+    width: 100%;
+    display: table;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    span{
+        display: table-cell;
+        vertical-align: middle;
+        color: #4C4C4C;
+    }
+}
+.addbox-card-user {
+    display: table-cell;
+    vertical-align: middle;
+    input{
+        width: 100%;
+        border: 0;
+        font-size: 0.35rem;
+    }
+}
+.addbox-card-user input::-webkit-input-placeholder {
+    color: #d6d6d6;
+}
+.addbox-card-btn a{
+    font-size: 0.45rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #fe5722;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+.bank-box {
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    height:200px;
+    z-index: 999;
+    display: none;
+    overflow-y: scroll;
+    img {
+        height: 0.8rem;
+    }
+    table {
+        width: 100%;
+        tr td {
+            background: #ffffff;
+            vertical-align: middle;
+            border-bottom: 1px solid #f6f6f6;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            color: #4C4C4C;
+            &:nth-child(1){
+                padding-left: 15px;
+                width: 1rem;
+            }
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+/*标题栏右侧内容*/
+.user-how {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    display: block;
+    text-align: left;
+    padding-right: 4%;
+   
+}
+.user-how span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+    font-size: 0.28rem;
+}
+.user-how img {
+    width: 0.35rem;
+    height: 0.35rem;
+}
+.public-head .user-how a {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    color: #FFFFFF;
+}
+/*ssl说明*/
+.sslbox {
+    position: relative;
+    width: 100%;
+    height: 35px;
+}
+.ssl {
+    text-align: center;
+    color: #999;
+    font-size: 0.3rem;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    img {
+        margin-right: 5px;
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+/*规则*/
+.invite-box {
+    font-size: 0.3rem;
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    div {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+		<title>风险评估</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/user_risk.css"/>
+	</head>
+	<body>
+		<!--head-->
+		<div class="public-head">
+			<a href="user.html"><img src="img/public/return.png" /></a> 风险评测
+		</div>
+		<p class="headbox"></p>
+		<div class="risk_box">
+        	<form action="#">
+        		<input type="hidden" id="uid" value="1" />
+        		<ul id="fbox">
+            		<li id="f1">
+            			<p class="ft16">1.您的年龄是？</p>
+            			<p><lable><input type="radio" name="a" data-number="0" id="a1"/><span><label for="a1">A.18岁以下</label></span></lable></p>
+            			<p><lable><input type="radio" name="a" data-number="4" id="a2"/><span><label for="a2">B.18-30岁</label></span></lable></p>
+            			<p><lable><input type="radio" name="a" data-number="3" id="a3"/><span><label for="a3">C.31-50岁</label></span></lable></p>
+            			<p><lable><input type="radio" name="a" data-number="2" id="a4"/><span><label for="a4">D.51-64岁</label></span></lable></p>
+            			<p><lable><input type="radio" name="a" data-number="1" id="a5"/><span><label for="a5">E.65岁及以上</label></span></lable></p>
+            		</li>
+            		<li id="f2">
+            			<p class="ft16">2.以下哪项最能说明您的投资经验？</p>
+            			<p><lable><input type="radio" name="b" data-number="0" id="b1"/><span><label for="b1">A.除存款、国债以外，我几乎不投资其他金融投资项目</label></span></lable></p>
+            			<p><lable><input type="radio" name="b" data-number="4" id="b2"/><span><label for="b2">B.尝试过货币基金（如余额宝）、信托等低风险金融投资项目</label></span></lable></p>
+            			<p><lable><input type="radio" name="b" data-number="3" id="b3"/><span><label for="b3">C.大部分资金投在货币基金等低风险金融投资项目，较少投资于股票、基金等高风险投资项目</label></span></lable></p>
+            			<p><lable><input type="radio" name="b" data-number="2" id="b4"/><span><label for="b4">D.资产均衡地分布于存款、国债、互联网金融投资项目、信托、股票、基金等</label></span></lable></p>
+            			<p><lable><input type="radio" name="b" data-number="1" id="b5"/><span><label for="b5">E.大部分投资于股票、基金、外汇等高风险投资项目，较少投资于存款、国债</label></span></lable></p>
+            		</li>
+            	</ul>
+        		<input type="button" value="提交问卷" id="tj"/>
+        	</form>
+		</div>
+		
+		<div class="floatbox" id="floatbox">
+			<div class="floatwindow">
+				<p class="f-tit">你的风险评测结果为</p>
+				<p class="f-txt">"<span id="f-txt"></span>"</p>
+				<p>
+					<button class="f-r" id="fr">重新评测</button>
+					<button class="f-t" id="ft">确认</button>
+				</p>
+			</div>
+		</div>
+		<!--rem-->
+		<script src="js/rem/app.js" type="text/javascript" charset="utf-8"></script>
+		<!--jquery-->
+		<script src="js/jquery/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+    		$("#tj").off("touchstart").on("touchstart",function(){
+    			//判断是否填写完整
+    			var x=$("#fbox li input:checked").size();
+    			if(x<10){
+    				alert("答案填写不完整！")
+    				return false;
+    			}else{
+    				//获取uid
+        			var uid=$("#uid").val();
+        			//查找选项
+        			var f1=$("#f1 input:checked").attr("data-number");
+					var f2=$("#f2 input:checked").attr("data-number");
+					var f3=$("#f3 input:checked").attr("data-number");
+					var f4=$("#f4 input:checked").attr("data-number");
+					var f5=$("#f5 input:checked").attr("data-number");
+					var f6=$("#f6 input:checked").attr("data-number");
+					var f7=$("#f7 input:checked").attr("data-number");
+					var f8=$("#f8 input:checked").attr("data-number");
+					var f9=$("#f9 input:checked").attr("data-number");
+					var f10=$("#10 input:checked").attr("data-number");
+					//计算结果
+					var js=parseInt(f1)+parseInt(f2)+parseInt(f3)+parseInt(f4)+parseInt(f5)+parseInt(f6)+parseInt(f7)+parseInt(f8)+parseInt(f9)+parseInt(f10);
+					var jg="";
+					//判断结果 请自行添加规则
+					if(js<=20){
+						jg="保守型"
+						$("#floatbox").show()
+						$("#f-txt").text("保守型")
+					}else{
+						jg="成长型"
+						$("#floatbox").show()
+						$("#f-txt").text("成长型")
+					}
+        			$.ajax({ 
+				        type: 'POST', 
+				        url: '1.php', 
+				        data: jg,
+				        success:function(data){         
+				           
+				        } 
+				    });
+    			}
+    		})
+    		//重测按钮事件
+    		$("#fr").on("touchstart",function(){window.location.reload()})
+    		$("#ft").on("touchstart",function(){window.location.href="user.html"})
+    	</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>用户中心</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_invitation.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user_invitation.html"><img src="src/img/public/return.png" /></a> 邀请好友
+		</div>
+		<div class="inv-phone-box">
+			<div class="inv-phone-main">
+				<a href="user_invitation_4.html" class="inv-phone-btn1">
+					<img src="src/img/user/invitation/btn.png"/>
+				</a>
+				<a href="login.html" class="inv-phone-btn2">
+					<img src="src/img/user/invitation/btn-2.png"/>
+				</a>
+			</div>
+		</div>
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_view.js']);
+		    });
+		</script>
+	</body>
+</html>

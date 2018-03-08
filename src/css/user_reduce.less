@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@import "public.less";
+
+body {
+    background: #f2f2f2;
+    font-family: "微软雅黑";
+}
+.user-details {
+    padding-top: 15px;
+    background:#ff5722;
+    color: #fff;
+}
+.user-details-pd {
+    display: table;
+    width: 100%;
+}
+.user-details-top {
+    font-size: 0.5rem;
+    padding-bottom: 35px;
+    span:nth-child(1){
+        display: table-cell;
+        padding-left: 20px;
+        width: 10%;
+    }
+    span:nth-child(2){
+        display: table-cell;
+        text-align: center;
+        width: 80%;
+    }
+    span:nth-child(3){
+        display: table-cell;
+        text-align: right;
+        width: 10%;
+        padding-right: 20px;
+    }
+    span {
+        display: table-cell;
+    }
+    img {
+        display: block;
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+}
+.user-money-box-top {
+    padding-bottom: 25px;
+}
+.user-money-number {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+.user-money-text {
+    text-align: center;
+    font-size: 0.3rem;
+}
+/**/
+.user-addbox {
+    background: #fff;
+    font-size: 0.35rem;
+}
+.user-addbox-top {
+    display: table;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #f6f6f6;
+    position: relative;
+}
+.addbox-card-name {
+    display: table-cell;
+    padding-left: 15px;
+    width: 30%;
+    img {
+        display: table-cell;
+        width: 0.6rem;
+        margin-right: 10px;
+    }
+    span{
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+.addbox-card-title {
+    display: table-cell;
+    vertical-align: middle;
+    color: #5c91e1;
+    padding-right: 15px;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    span:nth-child(2){
+        padding-top: 2px;
+        position: absolute;
+        right: 15px;
+        img{
+            height: 0.3rem;
+        }
+    } 
+}
+.addbox-card-number {
+    display: table-cell;
+    padding-left: 15px;
+    width: 30%;
+    img {
+        width: 0.6rem;
+        margin-right: 10px;
+        margin-top: 1px;
+    }
+}
+.user-addbox-bottom {
+    width: 100%;
+    display: table;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    span{
+        display: table-cell;
+        vertical-align: middle;
+        color: #4C4C4C;
+    }
+}
+.addbox-card-user {
+    display: table-cell;
+    vertical-align: middle;
+    input{
+        width: 100%;
+        border: 0;
+        font-size: 0.35rem;
+    }
+    &::-webkit-input-placeholder {
+        color: #d6d6d6;
+    }
+}
+.addbox-card-btn a{
+    font-size: 0.45rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: #fe5722;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+.bank-box {
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    height:200px;
+    z-index: 999;
+    display: none;
+    overflow-y: scroll;
+    img {
+        height: 0.8rem;
+    }
+    table {
+        width: 100%;
+        tr td {
+            background: #ffffff;
+            vertical-align: middle;
+            border-bottom: 1px solid #f6f6f6;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+        tr td:nth-child(1){
+            padding-left: 15px;
+            width: 1rem;
+        }
+        tr td img {
+            vertical-align: middle;
+        }
+    }
+}
+/*标题栏右侧内容*/
+.user-how {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    display: block;
+    text-align: left;
+    padding-right: 4%;
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0;
+        line-height: 0;
+        font-size: 0.28rem;
+    }
+    img {
+        width: 0.35rem;
+        height: 0.35rem;
+    }
+}
+.public-head .user-how a {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    color: #FFFFFF;
+}
+/*ssl说明*/
+.sslbox {
+    position: relative;
+    width: 100%;
+    height: 35px;
+}
+.ssl {
+    text-align: center;
+    color: #999;
+    font-size: 0.3rem;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    img {
+        margin-right: 5px;
+        width: 12px;
+        height: 16px;
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+/*规则*/
+.invite-box {
+    font-size: 0.3rem;
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+.invite-box div {
+    margin-bottom: 10px;
+}
+/*绑卡*/
+.reduce-window {
+    width: 300px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    position: fixed;
+    font-size: 0.4rem;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border:1px solid gainsboro;
+    text-align: center;
+}
+.reduce-body {
+    height: 50px;
+    line-height: 50px;
+}
+.reduce-window a {
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: #4C4C4C;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid gainsboro;
+    color: #FF5722;
+}
+.reduce-window a:nth-child(1){
+    box-sizing: border-box;
+    border-right: 1px solid gainsboro;
+}
+.reduce-window-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}

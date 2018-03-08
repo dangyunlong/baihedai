@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" href="css/head.css" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body id="body">
+		<div class="public-head">
+			<a href="user_invitation_3.html"><img src="img/public/return.png" /></a> 登录
+		</div>
+		<p class="headbox"></p>
+		<div class="inputbox">
+			<div class="userbox">
+				<img src="img/login/icon-uesr.png" width="16" height="16" class="uesricon"/>
+				<input type="text" id="uesrname" class="uesrname" placeholder="用户名/手机号" value=""/>
+				<img src="img/login/delete.png" class="uesrdelete" width="13" height="13"/>
+				<span class="prompt">账号错误!</span>
+			</div>
+			<div class="passbox">
+				<img src="img/login/icon-password.png"  width="16" height="16"  class="uesricon"/>
+				<input type="password" id="uesrpass" class="uesrpass" placeholder="登录密码" value=""/>
+				<img src="img/login/delete.png" class="uesrdelete" width="13"  height="13"/>
+				<span class="prompt">密码不正确!</span>
+			</div>
+			<a href="#" class="forget">忘记密码</a>
+		</div>
+		<div class="btnbox">
+			<a href="user.html" class="login-btn1">登录</a>
+			<a href="register.html" class="login-btn2">注册领红包</a>
+		</div>
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/rem/app.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//删除按钮的触发
+			$("input").on("tap",function(){
+				$(".userbox,.passbox").removeClass("choice");
+				$(this).siblings(".uesrdelete").css("display","block");
+				$(this).parent("div").addClass("choice");
+			})
+			$(".uesrdelete").on("tap",function(){
+				$(this).siblings("input").val("");
+			})
+			$(document).on("tap",function(ev){
+				if(ev.target.id=="body"&&$("#uesrname").val()==""){
+					$("#uesrname").siblings(".uesrdelete").css("display","none");
+					$("#uesrname").parent("div").removeClass("choice");
+				}
+				if(ev.target.id=="body"&&$("#uesrpass").val()==""){
+					$("#uesrpass").siblings(".uesrdelete").css("display","none");
+					$("#uesrpass").parent("div").removeClass("choice");
+				}
+			})
+		</script>
+	</body>
+</html>

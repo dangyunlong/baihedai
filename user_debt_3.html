@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>投资记录</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_debt.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="src/img/public/return.png" /></a> 债权转让
+		</div>
+		<p class="headbox"></p>
+		<span class="project-tab-view-window">
+			<ul class="project-tab-title">
+				<li>
+					<a href="user_debt_1.html">转让中的债权<span></span></a>
+				</li>
+				<li>
+					<a href="user_debt_2.html">已转让的债权<span></span></a>
+				</li>
+				<li class="project-tab-border">
+					<a href="user_debt_3.html">已购买的债权<span class="project-tab-border"></span></a>
+				</li>
+			</ul>
+		</span>
+		<!--暂无数据-->
+		<div class="project-trg-nodata">
+			<img src="src/img/user/detailed/nodata.png" width="67" height="86"/>
+			暂无记录
+		</div>
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_debt.js']);
+		    });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>投资记录</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/head.css"/>
+		<link rel="stylesheet" type="text/css" href="css/user_record.css"/>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="img/public/return.png" /></a> 投资记录
+		</div>
+		<p class="headbox"></p>
+		<span class="project-tab-view-window">
+			<ul class="project-tab-title" id="pagetab">
+				<li id="target1" class="project-tab-border">
+					<a href="#">进行中<span class="project-tab-border"></span></a>
+				</li>
+				<li id="target2">
+					<a href="#">收益中<span></span></a>
+				</li>
+				<li id="target3">
+					<a href="#">已回款<span></span></a>
+				</li>
+			</ul>
+		</span>
+		<div id="pagebox">
+			<!--进行中-->
+			<div id="target-page1">
+				<div class="user-record-box">
+					<a href="project-details.html">
+						<div class="record-user-box">
+							<div class="record-user-title">个人经营抵押贷Y1827363</div>
+							<div class="record-user-mum">1,000.00</div>
+							<div class="record-user-mumtxt">投资金额(元)</div>
+						</div>
+						<div class="record-user-moneybox">
+							<div class="record-user-money">8.9%</div>
+							<div class="record-user-moneytxt">收益率</div>
+						</div>
+						<div class="record-user-timebox">
+							<div class="record-user-time">2017年03月06日投资</div>
+							<div class="record-user-state">
+								<img src="img/user/record/touzi_moji.png"/>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="user-record-box">
+					<a href="project-details.html">
+						<div class="record-user-box">
+							<div class="record-user-title">测试新手标</div>
+							<div class="record-user-mum">1,000.00</div>
+							<div class="record-user-mumtxt">投资金额(元)</div>
+						</div>
+						<div class="record-user-moneybox">
+							<div class="record-user-money">8.9%</div>
+							<div class="record-user-moneytxt">收益率</div>
+						</div>
+						<div class="record-user-timebox">
+							<div class="record-user-time">2017年03月02日投资</div>
+							<div class="record-user-state">
+								<img src="img/user/record/touzi_moji.png"/>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!--收益中-->
+			<div id="target-page2" style="display: none;">
+				<div class="user-record-box">
+					<a href="project-details.html">
+						<div class="record-user-box">
+							<div class="record-user-title">个人经营抵押贷[DY-2017-5-20]</div>
+							<div class="record-user-mum">1,000.00</div>
+							<div class="record-user-mumtxt">投资金额(元)</div>
+						</div>
+						<div class="record-user-moneybox">
+							<div class="record-user-money">8.9%</div>
+							<div class="record-user-moneytxt">收益率</div>
+						</div>
+						<div class="record-user-timebox">
+							<div class="record-user-time">2017年03月06日投资</div>
+							<div class="record-user-state">
+								<img src="img/user/record/touzi_shouyi.png"/>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!--已回款-->
+			<div id="target-page3" style="display: none;">
+				<div class="user-record-box">
+					<a href="project-details.html">
+						<div class="record-user-box">
+							<div class="record-user-title2">个人经营抵押贷[DY-2017-5-20]</div>
+							<div class="record-user-mum2">1,000.00</div>
+							<div class="record-user-mumtxt">投资金额(元)</div>
+						</div>
+						<div class="record-user-moneybox">
+							<div class="record-user-money2">8.9%</div>
+							<div class="record-user-moneytxt">收益率</div>
+						</div>
+						<div class="record-user-timebox">
+							<div class="record-user-time">2017年03月06日退出</div>
+							<div class="record-user-state">
+								<img src="img/user/record/touzi_huikuan.png"/>
+							</div>
+						</div>
+					</a>
+				</div>
+				<!--暂无数据-->
+				<div class="project-trg-nodata">
+					<img src="img/user/detailed/nodata.png" width="67" height="86"/>
+					暂无记录
+				</div>
+				<!--暂无数据end-->
+			</div>
+		</div>	
+		<!--加载更多-->
+		<!--<div class="more">
+			向上滑动加载更多
+		</div>-->
+		<!--加载更多 end-->
+		<!--zepto-->
+		<script src="js/zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/event.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<!--rem-->
+		<script src="js/rem/app.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/*选项卡*/
+			function tab(event){
+				str=$(event.data.name).attr("id");
+				num=str.substr(str.length-1,1);
+				$("#pagetab li").removeClass("project-tab-border");
+				$("#pagetab li span").removeClass("project-tab-border");
+				$(event.data.name).addClass("project-tab-border");
+				$(event.data.name).find("span").addClass("project-tab-border");
+				$("#pagebox>div").css("display","none");
+				$("#target-page"+num).css("display","block");
+			}
+			$("#target1").on("tap",{name:"#target1"},tab);
+			$("#target2").on("tap",{name:"#target2"},tab);
+			$("#target3").on("tap",{name:"#target3"},tab);
+			$(function(){
+				$(window).scroll(function(){
+					var docHeight=$(document).height();
+					var windHeigth=$(window).height();
+					var scollPx=docHeight-windHeigth;
+					if($(window).scrollTop()==scollPx){
+						alert(123)
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

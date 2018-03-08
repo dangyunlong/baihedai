@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import "public.less";
+
+/*slide*/
+.focus{ 
+    width:100%; 
+    margin:0 auto; 
+    position:relative; 
+    overflow:hidden; 
+    .hd{ 
+        width:100%; 
+        height:11px;  
+        position:absolute; 
+        z-index:1; 
+        bottom:5px; 
+        text-align:center; 
+        ul{ 
+            display:inline-block; 
+            height:5px; 
+            padding:3px 5px; 
+            -webkit-border-radius:5px; 
+            -moz-border-radius:5px; 
+            border-radius:5px; 
+            font-size:0; 
+            vertical-align:top;
+            li{ 
+                display:inline-block; 
+                width:5px; 
+                height:5px; 
+                -webkit-border-radius:5px; 
+                -moz-border-radius:5px; 
+                border-radius:5px; 
+                background:#8C8C8C; 
+                margin:0 3px;  
+                vertical-align:top; 
+                overflow:hidden;
+            }
+            .on{ 
+                background:#ffffff; 
+                width: 10px; 
+            }
+        } 
+    } 
+    .bd{ 
+        position:relative; 
+        z-index:0; 
+        li img{ 
+            width:100%; 
+            display: block; 
+        }
+        li a{ 
+            -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ 
+        }
+    } 
+}
+
+/*body*/
+body {
+    font-family: "微软雅黑";
+    background: #f2f2f2;
+}
+.find-icon-box {
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #fff;
+    margin-top: 10px;
+    height: 160px;
+}
+.find-icon-box a {
+    display: block;
+    height: 35px;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+    overflow: hidden;
+}
+.find-icon-box a img {
+    display: block;
+    margin-right: 10px;
+    height: 1rem;
+}
+.find-icon-box-title {
+    font-size: 0.4rem;
+    color: #4c4c4c;
+    line-height: 0;
+    padding-top: 0.3rem;
+    margin-bottom: 0.35rem;
+}
+.find-icon-box-text {
+    font-size: 0.3rem;
+    color: #999;
+    padding-bottom: 2px;
+}
+.find-img-box {
+    background: #FFFFFF;
+    margin-top: 10px;
+    font-size: 0.4rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.find-img-box img {
+    max-width: 100%;
+    display: block;
+}
+.find-img-box a {
+    display: block;
+    margin-bottom: 10px;
+}
+.find-img-box img:last-child{
+    margin-bottom: 0;
+}
+.find-img-title {
+    margin-bottom: 20px;
+    color: #4C4C4C;
+}
+
+.find-img-title span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.heigthbox {
+    height: 65px;
+}

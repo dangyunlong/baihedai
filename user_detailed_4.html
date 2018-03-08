@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>资金明细</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_detailed.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--head-->
+		<div class="public-head">
+			<a href="user.html"><img src="src/img/public/return.png" /></a> 资金明细
+		</div>
+		<p class="headbox"></p>
+		<!--head end-->
+		<span class="project-tab-view-window">
+			<ul class="project-tab-title" id="pagetab">
+				<li>
+					<a href="user_detailed_1.html">全部<span></span></a>
+				</li>
+				<li>
+					<a href="user_detailed_2.html">充值<span></span></a>
+				</li>
+				<li>
+					<a href="user_detailed_3.html">提现<span></span></a>
+				</li>
+				<li class="project-tab-border">
+					<a href="user_detailed_4.html">投资<span class="project-tab-border"></span></a>
+				</li>
+				<li>
+					<a href="user_detailed_5.html">回款<span></span></a>
+				</li>
+			</ul>
+		</span>
+		<div class="user-detailed-box" id="target-page4">
+			<ul>
+				<li>
+					<table>
+						<tr>
+							<td rowspan="2" valign="top" width="42">
+								<img src="src/img/user/detailed/money_type3.png"/>
+							</td>
+							<td valign="top" class="user-det-title">
+								投资
+							</td>
+							<td rowspan="2" class="user-det-money" valign="top">
+								-3000
+							</td>
+						</tr>
+						<tr>
+							<td valign="bottom" class="user-det-time">
+								2017-03-06 11:49:27
+							</td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+		</div>
+		<!--加载更多-->
+		<div class="more">
+			向上滑动加载更多
+		</div>
+		<!--加载更多 end-->
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_detailed.js']);
+		    });
+		</script>
+	</body>
+</html>

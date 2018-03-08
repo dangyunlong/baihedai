@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>下载APP</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/download.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="index.html" id="return-arrow"><img src="img/public/return.png" /></a> 下载app
+		</div>
+		<p class="headbox"></p>
+		
+		<div class="download-btn-box">
+			<a href="">
+				立即下载（安卓版）
+			</a>
+			<a href="">
+				立即下载（ios版）
+			</a>
+		</div>
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/download.js']);
+		    });
+		</script>
+	</body>
+</html>

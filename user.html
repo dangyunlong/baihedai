@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>用户中心</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_index.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="user-details">
+			<div class="user-details-top">
+				<p class="user-details-pd">
+					<span><a href="user_center.html"><img src="src/img/user/index/personal_top_left.png"/></a></span>
+					<span>我的</span>
+					<span><a href="user_config.html"><img src="src/img/user/index/personal_set.png"/></a></span>
+				</p>
+			</div>
+			<div class="user-money-box-top">
+				<a href="user_view.html">
+					<div class="user-money-number">563,700.06</div>
+					<div class="user-money-text">账户总资产(元)</div>
+				</a>
+			</div>
+			<div class="user-money-box-main">
+				<div class="user-money-box-li">
+					<div>可用金额(元)
+						<span class="line"></span>
+					</div>
+					<div>0.00</div>
+				</div>
+				<div class="user-money-box-li">
+					<div>累计收益(元)</div>
+					<div>0.00</div>
+				</div>
+			</div>
+		</div>
+		<div class="user-btn">
+			<!--user_reduce.html-->
+			<a href="user_reduce.html" id="reduce">提现</a>
+			<!--user_add.html-->
+			<a href="user_add.html" id="add">充值</a>
+		</div>
+		<div class="user-ul">
+			<ul>
+				<li>
+					<a href="user_detailed_1.html">
+						<span class="user-ul-left">
+							<img src="src/img/user/index/personal_1.png" alt="" />
+						</span>
+						<span>资金明细</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/index/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="user_record_1.html">
+						<span class="user-ul-left">
+							<img src="src/img/user/index/personal_2.png" alt="" />
+						</span>
+						<span>投资记录</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/index/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="user_happy_1.html">
+						<span class="user-ul-left">
+							<img src="src/img/user/index/personal_3.png" alt="" />
+						</span>
+						<span>合家欢计划</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/index/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="user_debt_1.html">
+						<span class="user-ul-left">
+							<img src="src/img/user/index/personal_4.png" alt="" />
+						</span>
+						<span>债权转让</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/index/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="user-ul">
+			<ul>
+				<li>
+					<a href="user_coupon_1.html">
+						<span class="user-ul-left">
+							<img src="src/img/user/index/personal_5.png" alt="" />
+						</span>
+						<span>红包/加息券</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/index/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="user-ul">
+			<ul>
+				<li>
+					<a href="user_invitation.html">
+						<span class="user-ul-left">
+							<img src="src/img/user/index/personal_6.png" alt="" />
+						</span>
+						<span>邀请好友</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/index/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="user-ul">
+			<ul>
+				<li>
+					<a href="user_message.html">
+						<span class="user-ul-left">
+							<img src="src/img/user/index/personal_7.png" alt="" />
+						</span>
+						<span>我的消息</span>
+						<span class="user-ul-right">
+							<img src="src/img/user/index/arrowright.png" alt="" />
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="user-ul">
+			<ul>
+				<li>
+					<a href="tel://400-806-1886">
+						<span class="user-ul-left">
+							<img src="src/img/user/index/personal_8.png" alt="" />
+						</span>
+						<span>联系客服</span>
+						<span class="user-ul-right">
+							400-806-1886
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="heigthbox"></div>
+		<div class="fullwindow" id="fullwindow">
+			<div class="fullbox">
+				<div class="bankbox">
+					<span id="closs-bankbox"><img src="src/img/user/index/acc_Clear.png" width="26" height="26"/></span>
+					<a href="#">去开户</a>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-menu">
+			<ul>
+				<li>
+					<a href="index.html">
+						<img src="src/img/index/home-icon1.png" alt="" />
+						首页
+					</a>
+				</li>
+				<li>
+					<a href="financial.html">
+						<img src="src/img/index/home-icon2.png" alt="" />
+						理财
+					</a>
+				</li>
+				<li>
+					<a href="find.html">
+						<img src="src/img/index/home-icon3.png" alt="" />
+						发现
+					</a>
+				</li>
+				<li>
+					<a href="user.html" class="select">
+						<img src="src/img/index/home-icon4-select.png" alt="" />
+						账户
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_index.js']);
+		    });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>投资记录</title>
+		<link rel="stylesheet/less" tyle="text/css" href="src/css/user_debt.less">
+		<script src="src/js/public/require.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="public-head">
+			<a href="user.html"><img src="src/img/public/return.png" /></a> 债权转让
+		</div>
+		<p class="headbox"></p>
+		<span class="project-tab-view-window">
+			<ul class="project-tab-title">
+				<li>
+					<a href="user_debt_1.html">转让中的债权<span></span></a>
+				</li>
+				<li class="project-tab-border">
+					<a href="user_debt_2.html">已转让的债权<span class="project-tab-border"></span></a>
+				</li>
+				<li>
+					<a href="user_debt_3.html">已购买的债权<span></span></a>
+				</li>
+			</ul>
+		</span>
+		<div>
+			<!--已购买-->
+			<div>
+				<div class="user-record-box">
+					<a href="debt.html">
+						<div class="record-user-box">
+							<div class="record-user-title2">个人经营抵押贷Y1827363</div>
+							<div class="record-user-mum2">1,000.00</div>
+							<div class="record-user-mumtxt">投资金额(元)</div>
+						</div>
+						<div class="record-user-moneybox">
+							<div class="record-user-money2">8.10%</div>
+							<div class="record-user-moneytxt">折让率</div>
+						</div>
+						<div class="record-user-timebox">
+							<div class="record-user-time">2017年03月06日到期</div>
+							<div class="record-user-state">
+								<img src="src/img/user/debt/credit_finish.png"/>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<script language="javascript" type="text/javascript">
+		    require(['src/js/common.js'], function (common){
+		        require(['src/js/user_debt.js']);
+		    });
+		</script>
+	</body>
+</html>
